@@ -1,0 +1,13 @@
+{
+  "itemGroup.arcanesanxiousaetherores": "Example Mod Tab",
+  "block.arcanesanxiousaetherores.example_block": "Example Block",
+  "item.arcanesanxiousaetherores.example_item": "Example Item",
+
+  "arcanesanxiousaetherores.configuration.title": "Arcane's Anxious Aether Ores Configs",
+  "arcanesanxiousaetherores.configuration.section.arcanesanxiousaetherores.common.toml": "Arcane's Anxious Aether Ores Configs",
+  "arcanesanxiousaetherores.configuration.section.arcanesanxiousaetherores.common.toml.title": "Arcane's Anxious Aether Ores Configs",
+  "arcanesanxiousaetherores.configuration.items": "Item List",
+  "arcanesanxiousaetherores.configuration.logDirtBlock": "Log Dirt Block",
+  "arcanesanxiousaetherores.configuration.magicNumberIntroduction": "Magic Number Text",
+  "arcanesanxiousaetherores.configuration.magicNumber": "Magic Number"
+}
