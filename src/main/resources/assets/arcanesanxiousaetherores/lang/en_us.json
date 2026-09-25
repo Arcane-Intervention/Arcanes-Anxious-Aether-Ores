@@ -1,6 +1,7 @@
 {
   "itemGroup.arcanesanxiousaetherores": "Example Mod Tab",
   "block.arcanesanxiousaetherores.example_block": "Example Block",
+  "block.arcanesanxiousaetherores.holystone_iron_ore": "Holystone Iron Ore",
   "item.arcanesanxiousaetherores.example_item": "Example Item",
 
   "arcanesanxiousaetherores.configuration.title": "Arcane's Anxious Aether Ores Configs",
