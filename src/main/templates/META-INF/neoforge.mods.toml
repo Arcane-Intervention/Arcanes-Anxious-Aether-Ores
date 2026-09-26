@@ -73,6 +73,13 @@ Built for ABM 3: Aether Drift
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
     side="BOTH"
 
+[[dependencies.${mod_id}]]
+    modId="aether_ii"
+    type="required"
+    versionRange="[1.0-alpha.4.1)"
+    ordering="AFTER"
+    side="BOTH"
+
 # Here's another dependency
 [[dependencies.${mod_id}]]
     modId="minecraft"
