@@ -13,5 +13,9 @@ public class ModItems {
 	public static final DeferredItem<BlockItem> HOLYSTONE_IRON_ORE_ITEM = 
 			ITEMS.registerSimpleBlockItem(
 					ModBlocks.HOLYSTONE_IRON_ORE);
+	
+	public static final DeferredItem<BlockItem> UNDERSHALE_IRON_ORE_ITEM = 
+			ITEMS.registerSimpleBlockItem(
+					ModBlocks.UNDERSHALE_IRON_ORE);
 			
 }

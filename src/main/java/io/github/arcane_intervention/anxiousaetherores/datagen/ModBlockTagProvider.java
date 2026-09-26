@@ -22,9 +22,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 	protected void addTags(HolderLookup.Provider lookupProvider) {
 		
 		this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-				.add(ModBlocks.HOLYSTONE_IRON_ORE.get());
+				.add(
+						ModBlocks.HOLYSTONE_IRON_ORE.get(),
+						ModBlocks.UNDERSHALE_IRON_ORE.get()
+						);
 		
 		this.tag(BlockTags.NEEDS_STONE_TOOL)
-				.add(ModBlocks.HOLYSTONE_IRON_ORE.get());
+				.add(
+						ModBlocks.HOLYSTONE_IRON_ORE.get(),
+						ModBlocks.UNDERSHALE_IRON_ORE.get()
+						);
 	}
 }

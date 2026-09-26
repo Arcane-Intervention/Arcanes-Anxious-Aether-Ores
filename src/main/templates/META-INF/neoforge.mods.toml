@@ -76,7 +76,7 @@ Built for ABM 3: Aether Drift
 [[dependencies.${mod_id}]]
     modId="aether_ii"
     type="required"
-    versionRange="[1.0-alpha.4.1)"
+    versionRange="[1.0-alpha.4.1,)"
     ordering="AFTER"
     side="BOTH"
 

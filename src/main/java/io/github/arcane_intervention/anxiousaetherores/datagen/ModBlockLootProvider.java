@@ -20,6 +20,8 @@ public class ModBlockLootProvider extends BlockLootSubProvider {
 	protected void generate() {
 		this.add(ModBlocks.HOLYSTONE_IRON_ORE.get(),
 				block -> createOreDrop(block, Items.RAW_IRON));
+		this.add(ModBlocks.UNDERSHALE_IRON_ORE.get(),
+				block -> createOreDrop(block, Items.RAW_IRON));
 	}
 	
 	@Override

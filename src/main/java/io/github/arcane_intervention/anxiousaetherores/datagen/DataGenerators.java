@@ -4,10 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
-import io.github.arcane_intervention.anxiousaetherores.registry.ModBlocks;
-import net.minecraft.core.Holder;
 import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -32,7 +29,10 @@ public class DataGenerators {
                                 LootContextParamSets.BLOCK
                         )
                 ),
-                lookupProvider
-        ));
+                lookupProvider));
+		
+		event.createProvider(ModModelProvider::new);
+		
+		event.createProvider(ModLanguageProvider::new);
 	}	
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "arcanesanxiousaetherores:block/undershale_iron_ore"
+  }
+}

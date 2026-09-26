@@ -23,4 +23,14 @@ public class ModBlocks {
 							),
 					() -> BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
 					);
+	
+	public static final DeferredBlock<Block> UNDERSHALE_IRON_ORE =
+			BLOCKS.registerBlock(
+					"undershale_iron_ore",
+					properties -> new DropExperienceBlock(
+							ConstantInt.ZERO,
+							properties
+							),
+					() -> BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
+					);
 }
