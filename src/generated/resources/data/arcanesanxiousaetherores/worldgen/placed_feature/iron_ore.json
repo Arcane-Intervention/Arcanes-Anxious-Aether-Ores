@@ -1,5 +1,5 @@
 {
-  "feature": "arcanesanxiousaetherores:holystone_iron_ore",
+  "feature": "arcanesanxiousaetherores:iron_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -12,12 +12,12 @@
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "absolute": 192
+        },
         "min_inclusive": {
-  			"absolute": 64
-		},
-		"max_inclusive": {
-  			"absolute": 192
-		},
+          "absolute": 32
+        },
         "plateau": 32
       }
     },

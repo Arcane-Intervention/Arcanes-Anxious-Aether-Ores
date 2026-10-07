@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Set;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -34,5 +36,17 @@ public class DataGenerators {
 		event.createProvider(ModModelProvider::new);
 		
 		event.createProvider(ModLanguageProvider::new);
+		
+		event.createDatapackRegistryObjects(
+				new RegistrySetBuilder()
+				.add(
+						Registries.CONFIGURED_FEATURE,
+						ModConfiguredFeatures::bootstrap)
+				.add(
+						Registries.PLACED_FEATURE,
+						ModPlacedFeatures::bootstrap)
+				);
+		
+		event.createProvider(ModBiomeTagsProvider::new);
 	}	
 }
