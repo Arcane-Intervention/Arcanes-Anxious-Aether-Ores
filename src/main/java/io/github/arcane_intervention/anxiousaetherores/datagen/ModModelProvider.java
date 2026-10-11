@@ -1,7 +1,7 @@
 package io.github.arcane_intervention.anxiousaetherores.datagen;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
-import io.github.arcane_intervention.anxiousaetherores.registry.ModBlocks;
+import io.github.arcane_intervention.anxiousaetherores.registry.ModOres;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -14,9 +14,18 @@ public class ModModelProvider extends ModelProvider {
 	}
 	
 	@Override
-    protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-		
-		blockModels.createTrivialCube(ModBlocks.HOLYSTONE_IRON_ORE.get());
-		blockModels.createTrivialCube(ModBlocks.UNDERSHALE_IRON_ORE.get());
+	protected void registerModels(
+	        BlockModelGenerators blockModels,
+	        ItemModelGenerators itemModels) {
+
+	    for (OreDefinition ore : ModOres.ORES) {
+
+	        for (OreDefinition.Variant variant : ore.variants) {
+
+	            blockModels.createTrivialCube(
+	                    variant.oreBlock().get()
+	            );
+	        }
+	    }
 	}
 }

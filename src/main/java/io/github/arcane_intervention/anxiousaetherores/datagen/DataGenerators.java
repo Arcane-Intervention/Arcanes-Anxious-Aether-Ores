@@ -11,6 +11,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 	@EventBusSubscriber(
 	    modid = ArcanesAnxiousAetherOres.MODID
@@ -45,6 +46,9 @@ public class DataGenerators {
 				.add(
 						Registries.PLACED_FEATURE,
 						ModPlacedFeatures::bootstrap)
+				.add(
+				        NeoForgeRegistries.Keys.BIOME_MODIFIERS,
+				        ModBiomeModifiers::bootstrap)
 				);
 		
 		event.createProvider(ModBiomeTagsProvider::new);

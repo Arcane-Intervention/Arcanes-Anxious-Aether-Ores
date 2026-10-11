@@ -1,21 +1,26 @@
 package io.github.arcane_intervention.anxiousaetherores.registry;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
-import net.minecraft.world.item.BlockItem;
-import net.neoforged.neoforge.registries.DeferredItem;
+import io.github.arcane_intervention.anxiousaetherores.datagen.OreDefinition;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
 
-	public static final DeferredRegister.Items ITEMS = 
-			DeferredRegister.Items.createItems(ArcanesAnxiousAetherOres.MODID);
-	
-	public static final DeferredItem<BlockItem> HOLYSTONE_IRON_ORE_ITEM = 
-			ITEMS.registerSimpleBlockItem(
-					ModBlocks.HOLYSTONE_IRON_ORE);
-	
-	public static final DeferredItem<BlockItem> UNDERSHALE_IRON_ORE_ITEM = 
-			ITEMS.registerSimpleBlockItem(
-					ModBlocks.UNDERSHALE_IRON_ORE);
-			
+    public static final DeferredRegister.Items ITEMS =
+            DeferredRegister.createItems(
+                    ArcanesAnxiousAetherOres.MODID
+            );
+
+    static {
+
+        for (OreDefinition ore : ModOres.ORES) {
+
+            for (OreDefinition.Variant variant : ore.variants) {
+
+                ITEMS.registerSimpleBlockItem(
+                        variant.oreBlock()
+                );
+            }
+        }
+    }
 }
