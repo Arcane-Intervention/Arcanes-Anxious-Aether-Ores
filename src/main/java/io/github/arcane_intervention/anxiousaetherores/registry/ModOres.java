@@ -9,6 +9,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTes
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 // Creates OreDefinition Objects, each object defines one type of ore (e.g. Iron, Copper, Diamond) and all of its variants for datagen
+// TLDR, add new ores here - the only other thing you need to do is include a blocktexture.
 
 public class ModOres {
 	
