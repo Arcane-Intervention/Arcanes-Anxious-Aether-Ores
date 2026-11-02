@@ -3,7 +3,8 @@ package io.github.arcane_intervention.anxiousaetherores.datagen;
 import java.util.concurrent.CompletableFuture;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
-import io.github.arcane_intervention.anxiousaetherores.registry.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.OreDefinition;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;

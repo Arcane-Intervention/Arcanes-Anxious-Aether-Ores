@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#arcanesanxiousaetherores:aether_ore_generation",
+  "features": "arcanesanxiousaetherores:lapis_ore",
+  "step": "underground_ores"
+}

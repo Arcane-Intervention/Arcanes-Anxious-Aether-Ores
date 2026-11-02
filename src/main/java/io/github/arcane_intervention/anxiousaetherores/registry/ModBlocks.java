@@ -3,7 +3,8 @@ package io.github.arcane_intervention.anxiousaetherores.registry;
 import java.util.Locale;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
-import io.github.arcane_intervention.anxiousaetherores.datagen.OreDefinition;
+import io.github.arcane_intervention.anxiousaetherores.ores.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.OreDefinition;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;

@@ -1,4 +1,18 @@
 {
+  "block.arcanesanxiousaetherores.holystone_coal_ore": "Holystone Coal Ore",
+  "block.arcanesanxiousaetherores.holystone_copper_ore": "Holystone Copper Ore",
+  "block.arcanesanxiousaetherores.holystone_diamond_ore": "Holystone Diamond Ore",
+  "block.arcanesanxiousaetherores.holystone_emerald_ore": "Holystone Emerald Ore",
+  "block.arcanesanxiousaetherores.holystone_gold_ore": "Holystone Gold Ore",
   "block.arcanesanxiousaetherores.holystone_iron_ore": "Holystone Iron Ore",
-  "block.arcanesanxiousaetherores.undershale_iron_ore": "Undershale Iron Ore"
+  "block.arcanesanxiousaetherores.holystone_lapis_ore": "Holystone Lapis Ore",
+  "block.arcanesanxiousaetherores.holystone_redstone_ore": "Holystone Redstone Ore",
+  "block.arcanesanxiousaetherores.undershale_coal_ore": "Undershale Coal Ore",
+  "block.arcanesanxiousaetherores.undershale_copper_ore": "Undershale Copper Ore",
+  "block.arcanesanxiousaetherores.undershale_diamond_ore": "Undershale Diamond Ore",
+  "block.arcanesanxiousaetherores.undershale_emerald_ore": "Undershale Emerald Ore",
+  "block.arcanesanxiousaetherores.undershale_gold_ore": "Undershale Gold Ore",
+  "block.arcanesanxiousaetherores.undershale_iron_ore": "Undershale Iron Ore",
+  "block.arcanesanxiousaetherores.undershale_lapis_ore": "Undershale Lapis Ore",
+  "block.arcanesanxiousaetherores.undershale_redstone_ore": "Undershale Redstone Ore"
 }

@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
-import io.github.arcane_intervention.anxiousaetherores.registry.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.OreDefinition;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 

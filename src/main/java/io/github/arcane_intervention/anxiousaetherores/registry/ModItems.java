@@ -1,7 +1,8 @@
 package io.github.arcane_intervention.anxiousaetherores.registry;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
-import io.github.arcane_intervention.anxiousaetherores.datagen.OreDefinition;
+import io.github.arcane_intervention.anxiousaetherores.ores.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.OreDefinition;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {

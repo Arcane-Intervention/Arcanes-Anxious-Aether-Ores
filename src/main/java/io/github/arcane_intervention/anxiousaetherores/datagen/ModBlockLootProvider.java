@@ -2,8 +2,9 @@ package io.github.arcane_intervention.anxiousaetherores.datagen;
 
 import java.util.Set;
 
+import io.github.arcane_intervention.anxiousaetherores.ores.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.OreDefinition;
 import io.github.arcane_intervention.anxiousaetherores.registry.ModBlocks;
-import io.github.arcane_intervention.anxiousaetherores.registry.ModOres;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;

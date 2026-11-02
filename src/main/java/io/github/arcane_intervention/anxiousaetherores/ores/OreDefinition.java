@@ -1,9 +1,10 @@
-package io.github.arcane_intervention.anxiousaetherores.datagen;
+package io.github.arcane_intervention.anxiousaetherores.ores;
 
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
 
+import io.github.arcane_intervention.anxiousaetherores.datagen.ModBlockLootProvider;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
@@ -99,9 +100,11 @@ public class OreDefinition {
 	public int plateau = 32;
 	
 	// Constructor
-	public OreDefinition(String oreType, Block sourceBlock, Variant[] variants) {
+	public OreDefinition(String oreType, Block sourceBlock, Item dropItem, TagKey<Block> requiredToolTag, Variant[] variants) {
 			this.oreType = oreType;
 			this.sourceBlock = sourceBlock;
+			this.dropItem = dropItem;
+			this.requiredToolTag = requiredToolTag;
 			this.variants = variants.clone();
 	}
 	

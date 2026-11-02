@@ -1,6 +1,20 @@
 {
   "values": [
     "arcanesanxiousaetherores:holystone_iron_ore",
-    "arcanesanxiousaetherores:undershale_iron_ore"
+    "arcanesanxiousaetherores:undershale_iron_ore",
+    "arcanesanxiousaetherores:holystone_copper_ore",
+    "arcanesanxiousaetherores:undershale_copper_ore",
+    "arcanesanxiousaetherores:holystone_coal_ore",
+    "arcanesanxiousaetherores:undershale_coal_ore",
+    "arcanesanxiousaetherores:holystone_gold_ore",
+    "arcanesanxiousaetherores:undershale_gold_ore",
+    "arcanesanxiousaetherores:holystone_lapis_ore",
+    "arcanesanxiousaetherores:undershale_lapis_ore",
+    "arcanesanxiousaetherores:holystone_diamond_ore",
+    "arcanesanxiousaetherores:undershale_diamond_ore",
+    "arcanesanxiousaetherores:holystone_emerald_ore",
+    "arcanesanxiousaetherores:undershale_emerald_ore",
+    "arcanesanxiousaetherores:holystone_redstone_ore",
+    "arcanesanxiousaetherores:undershale_redstone_ore"
   ]
 }

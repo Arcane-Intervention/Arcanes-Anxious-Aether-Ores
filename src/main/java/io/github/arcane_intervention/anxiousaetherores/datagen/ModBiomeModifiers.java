@@ -1,8 +1,9 @@
 package io.github.arcane_intervention.anxiousaetherores.datagen;
 
 import io.github.arcane_intervention.anxiousaetherores.ArcanesAnxiousAetherOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.ModOres;
+import io.github.arcane_intervention.anxiousaetherores.ores.OreDefinition;
 import io.github.arcane_intervention.anxiousaetherores.registry.ModBiomeTags;
-import io.github.arcane_intervention.anxiousaetherores.registry.ModOres;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
