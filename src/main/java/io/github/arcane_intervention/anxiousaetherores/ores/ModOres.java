@@ -21,7 +21,7 @@ public class ModOres {
 			new OreDefinition(
 					"iron",
 					Blocks.IRON_ORE,
-					Items.RAW_IRON,
+					() -> Items.RAW_IRON,
 					BlockTags.NEEDS_STONE_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
@@ -38,7 +38,7 @@ public class ModOres {
 			new OreDefinition (
 					"copper",
 					Blocks.COPPER_ORE,
-					Items.RAW_COPPER,
+					() -> Items.RAW_COPPER,
 					BlockTags.NEEDS_STONE_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
@@ -56,7 +56,7 @@ public class ModOres {
 			new OreDefinition (
 					"coal",
 					Blocks.COAL_ORE,
-					Items.COAL,
+					() -> Items.COAL,
 					null,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
@@ -74,7 +74,7 @@ public class ModOres {
 			new OreDefinition (
 					"gold",
 					Blocks.GOLD_ORE,
-					Items.RAW_GOLD,
+					() -> Items.RAW_GOLD,
 					BlockTags.NEEDS_IRON_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
@@ -91,7 +91,7 @@ public class ModOres {
 			new OreDefinition (
 					"lapis",
 					Blocks.LAPIS_ORE,
-					Items.LAPIS_LAZULI,
+					() -> Items.LAPIS_LAZULI,
 					BlockTags.NEEDS_STONE_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
@@ -110,7 +110,7 @@ public class ModOres {
 			new OreDefinition (
 					"diamond",
 					Blocks.DIAMOND_ORE,
-					Items.DIAMOND,
+					() -> Items.DIAMOND,
 					BlockTags.NEEDS_IRON_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
@@ -128,7 +128,7 @@ public class ModOres {
 			new OreDefinition (
 					"emerald",
 					Blocks.EMERALD_ORE,
-					Items.EMERALD,
+					() -> Items.EMERALD,
 					BlockTags.NEEDS_IRON_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
@@ -148,7 +148,7 @@ public class ModOres {
 			new OreDefinition (
 					"redstone",
 					Blocks.IRON_ORE,	//Used as a sub for Redstone Ore until I figure out what to do about exceptions. 
-					Items.REDSTONE,
+					() -> Items.REDSTONE,
 					BlockTags.NEEDS_IRON_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(

@@ -77,7 +77,9 @@ public class OreDefinition {
 	            Block block
 	    );
 	}
-	public Item dropItem; // Item to drop when broken with correct tool, unless silktouch is used
+	
+	public Supplier<Item> dropItem; // Supplier for the item to drop when broken with correct tool, unless silktouch is used. Normally, a lambda "() -> itemname" is used in ModOres.java
+	
 	public NumberProvider dropCount = ConstantValue.exactly(1); // Base value for the amount of the above item to drop - modified by fortune based on LootStrategy
 	public LootStrategy lootStrategy = (provider, ore, block) -> {
 
@@ -89,8 +91,8 @@ public class OreDefinition {
 	};
 	public IntProvider experience = ConstantInt.of(0); // Amount of XP to drop when the block is broken with the correct tool
 	
-	public TagKey<Block> requiredToolTag; // Block tag(s) detailing the tier of tool required, normally using REQUIRES_XXX_TOOL helpers instead of a slew of "not suitable for X" tags
-										  // Pickaxe (or other) requirement tag is already applied based on the supplier block
+	public TagKey<Block> requiredToolTag; // Block tag detailing the tier of tool required, using NEEDS_XXX_TOOL helpers
+										  // Mineable with pickaxe tag is applied to all blocks by ModBlockTagProvider
 	
 	// Generation
 	public int veinSize = 9;
@@ -101,18 +103,23 @@ public class OreDefinition {
 	public int plateau = 32;
 	
 	// Constructor
-	public OreDefinition(String oreType, Block sourceBlock, Item dropItem, TagKey<Block> requiredToolTag, Variant[] variants) {
+	public OreDefinition(String oreType, Block sourceBlock, Supplier<Item> dropItem, TagKey<Block> requiredToolTag, Variant[] variants) {
 			this.oreType = oreType;
 			this.sourceBlock = sourceBlock;
-			this.dropItem = dropItem;
+			this.dropItem = () -> dropItem.get();
 			this.requiredToolTag = requiredToolTag;
 			this.variants = variants.clone();
 	}
 	
+	// Block Factory Selection
+	// Exists because redstone's lit/unlit state are not compatible with a DropExperienceBlock
+	
+	
+	
 	// Overwrite methods
 
-	public OreDefinition drop(Item item) {
-	    this.dropItem = item;
+	public OreDefinition drop(Supplier<Item> item) {
+	    this.dropItem = () -> item.get();
 	    return this;
 	}
 

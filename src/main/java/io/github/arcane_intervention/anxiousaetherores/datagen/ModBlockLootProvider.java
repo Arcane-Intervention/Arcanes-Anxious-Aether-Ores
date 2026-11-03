@@ -31,7 +31,7 @@ public class ModBlockLootProvider extends BlockLootSubProvider {
 	            block,
 	            this.applyExplosionDecay(
 	                    block,
-	                    LootItem.lootTableItem(ore.dropItem)
+	                    LootItem.lootTableItem(ore.dropItem.get())
 	                            .apply(SetItemCountFunction.setCount(ore.dropCount))
 	                            .apply(ApplyBonusCount.addOreBonusCount(
 	                                    enchantments.getOrThrow(Enchantments.FORTUNE)
