@@ -92,7 +92,7 @@ public class ModOres {
 					"lapis",
 					Blocks.LAPIS_ORE,
 					Items.LAPIS_LAZULI,
-					BlockTags.NEEDS_IRON_TOOL,
+					BlockTags.NEEDS_STONE_TOOL,
 					new OreDefinition.Variant[] {
 							new OreDefinition.Variant(
 									"holystone", 
