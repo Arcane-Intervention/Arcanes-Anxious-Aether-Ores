@@ -23,27 +23,27 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class OreDefinition {
 	// Block Definitions
-	public final String oreType;
+	public final String oreType; // Ore type (e.g. iron, diamond, uranium, etc
 	public List<TagKey<Block>> oreTags = List.of();
-	public final Block sourceBlock;
+	public final Block sourceBlock; // Supply a block to copy the block properties of for in world behaviour (blast resistance, mining speed, etc) - I should probably add overrides for this
 	
-	// Full disclosure this update of Variant to allow registration from ModOres.java is vibecoded and I do NOT understand it well enough.
+
 	public static class Variant {
 
-	    private final String name;
-	    private final Supplier<RuleTest> targetRule;
-	    private DeferredBlock<Block> oreBlock;
+	    private final String name; 
+	    private final Supplier<RuleTest> targetRule; 
+	    private DeferredBlock<Block> oreBlock; 
 
-	    public Variant(String name, Supplier<RuleTest> targetRule) {
+	    public Variant(String name, Supplier<RuleTest> targetRule) { 
 	        this.name = name;
 	        this.targetRule = targetRule;
 	    }
 
-	    public String name() {
+	    public String name() { // Variant name, use the name of the base block to "replace" (e.g. holystone for holystone iron ore, undershale for undershale iron ore) - doesnt impact targeting
 	        return name;
 	    }
 
-	    public Supplier<RuleTest> targetRule() {
+	    public Supplier<RuleTest> targetRule() { // Per-ore-variant target rule (e.g. target all blocks tagged holystone for the holystone variant)
 	        return targetRule;
 	    }
 
@@ -65,7 +65,7 @@ public class OreDefinition {
 	        this.oreBlock = Objects.requireNonNull(block);
 	    }
 	}
-	// I mostly understand things again from below this line. Mostly.
+
 	public final Variant[] variants;
 	
 	// Loot
@@ -77,8 +77,8 @@ public class OreDefinition {
 	            Block block
 	    );
 	}
-	public Item dropItem;
-	public NumberProvider dropCount = ConstantValue.exactly(1);
+	public Item dropItem; // Item to drop when broken with correct tool, unless silktouch is used
+	public NumberProvider dropCount = ConstantValue.exactly(1); // Base value for the amount of the above item to drop - modified by fortune based on LootStrategy
 	public LootStrategy lootStrategy = (provider, ore, block) -> {
 
 	    if (ore.dropItem == null) {
@@ -87,9 +87,10 @@ public class OreDefinition {
 
 	    return provider.standardOreLoot(ore, block);
 	};
-	public IntProvider experience = ConstantInt.of(0);
+	public IntProvider experience = ConstantInt.of(0); // Amount of XP to drop when the block is broken with the correct tool
 	
-	public TagKey<Block> requiredToolTag;
+	public TagKey<Block> requiredToolTag; // Block tag(s) detailing the tier of tool required, normally using REQUIRES_XXX_TOOL helpers instead of a slew of "not suitable for X" tags
+										  // Pickaxe (or other) requirement tag is already applied based on the supplier block
 	
 	// Generation
 	public int veinSize = 9;
@@ -168,5 +169,3 @@ public class OreDefinition {
 	    return this;
 	}
 }
-
-// You see, its a mess because I dont know what I'm doing :)'
